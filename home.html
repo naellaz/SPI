@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Perkembangan Islam di Asia Selatan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L90 90 L10 90 Z" fill="rgba(255,255,255,0.03)"/></svg>') repeat;
+            opacity: 0.1;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            font-weight: 300;
+            opacity: 0.9;
+            font-family: 'Segoe UI', sans-serif;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav button {
+            background: transparent;
+            color: #2c3e50;
+            border: none;
+            padding: 20px 30px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            letter-spacing: 0.5px;
+        }
+
+        nav button:hover {
+            background: #f8f9fa;
+            color: #16213e;
+        }
+
+        nav button.active {
+            color: #16213e;
+            border-bottom: 3px solid #c9a961;
+            background: #f8f9fa;
+        }
+
+        .content-section {
+            background: #fff;
+            padding: 60px 50px;
+            margin: 40px auto;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            border-radius: 2px;
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #c9a961;
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            color: #16213e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            margin: 50px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #c9a961 0%, #1a1a2e 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 25px 30px;
+            background: #fafafa;
+            border-left: 4px solid #c9a961;
+            transition: all 0.3s;
+        }
+
+        .timeline-item:hover {
+            background: #f5f5f5;
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -56px;
+            top: 30px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #c9a961;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 2px #c9a961;
+        }
+
+        .year {
+            color: #c9a961;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            background: #fafafa;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid #c9a961;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            background: #f5f5f5;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transform: translateX(3px);
+        }
+
+        .card h4 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .grid-item {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 35px;
+            border-radius: 2px;
+            transition: all 0.3s;
+            border-top: 3px solid #c9a961;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .grid-item h4 {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 400;
+            color: #c9a961;
+        }
+
+        .grid-item p {
+            font-size: 1em;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 8px 0;
+            text-align: center;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(201,169,97,0.2) 0%, rgba(201,169,97,0.3) 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        ul {
+            margin: 20px 0 20px 40px;
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.7;
+        }
+
+        strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .intro-text {
+            font-size: 1.15em;
+            color: #34495e;
+            line-height: 1.9;
+            margin-bottom: 30px;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #c9a961, transparent);
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .content-section {
+                padding: 30px 25px;
+            }
+
+            nav button {
+                padding: 15px 20px;
+                font-size: 0.9em;
+            }
+
+            .timeline {
+                padding-left: 35px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SEJARAH ISLAM DI ASIA SELATAN</h1>
+            <p class="subtitle">Perjalanan Peradaban Islam dari Abad VII hingga Masa Kini</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button onclick="showSection('pendahuluan')" class="active">Pendahuluan</button>
+            <button onclick="showSection('jalur-masuk')">Jalur Masuk</button>
+            <button onclick="showSection('timeline')">Timeline</button>
+            <button onclick="showSection('tokoh')">Tokoh Penting</button>
+            <button onclick="showSection('peninggalan')">Peninggalan</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="pendahuluan" class="content-section active">
+            <h2>Pendahuluan</h2>
+            <p class="intro-text">Asia Selatan merupakan salah satu wilayah dengan populasi Muslim terbesar di dunia. Perkembangan Islam di kawasan ini dimulai sejak abad ke-7 Masehi dan telah membentuk peradaban yang kaya dengan warisan budaya, ilmu pengetahuan, dan arsitektur yang megah.</p>
+            
+            <h3>Wilayah Asia Selatan</h3>
+            <p>Kawasan yang dimaksud meliputi:</p>
+            <div class="card">
+                <ul>
+                    <li><strong>India</strong> — Populasi Muslim terbesar ketiga di dunia dengan lebih dari 200 juta jiwa</li>
+                    <li><strong>Pakistan</strong> — Negara dengan mayoritas Muslim, sekitar 230 juta penduduk</li>
+                    <li><strong>Bangladesh</strong> — Negara Muslim terbesar ketiga di dunia dengan 165 juta penduduk</li>
+                    <li><strong>Afghanistan</strong> — Mayoritas Muslim dengan sejarah Islam yang panjang</li>
+                    <li><strong>Maladewa</strong> — Negara kepulauan dengan 100% populasi Muslim</li>
+                    <li><strong>Sri Lanka</strong> — Minoritas Muslim yang signifikan dalam masyarakat</li>
+                </ul>
+            </div>
+
+            <h3>Signifikansi Asia Selatan dalam Sejarah Islam</h3>
+            <div class="card">
+                <p>Asia Selatan menjadi pusat peradaban Islam yang penting karena beberapa alasan fundamental:</p>
+                <ul>
+                    <li>Berfungsi sebagai jembatan strategis antara peradaban Timur Tengah dan Asia Tenggara</li>
+                    <li>Melahirkan dinasti-dinasti Islam yang berkuasa seperti Kesultanan Delhi dan Kekaisaran Mughal</li>
+                    <li>Menghasilkan karya-karya monumental dalam bidang ilmu pengetahuan, seni, dan arsitektur</li>
+                    <li>Memiliki lebih dari 600 juta Muslim pada masa kini, hampir sepertiga dari populasi Muslim dunia</li>
+                    <li>Menciptakan sintesis unik antara tradisi Islam dengan budaya lokal India</li>
+                </ul>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Konteks Historis Pra-Islam</h3>
+            <p>Sebelum kedatangan Islam, Asia Selatan telah memiliki peradaban yang maju dengan sistem keagamaan Hindu dan Buddha yang dominan. Struktur masyarakat yang kompleks dengan sistem kasta, tradisi filosofis yang kaya, dan jalur perdagangan yang aktif menjadi latar belakang masuknya Islam ke wilayah ini.</p>
+        </div>
+
+        <div id="jalur-masuk" class="content-section">
+            <h2>Jalur Masuk Islam ke Asia Selatan</h2>
+            
+            <h3>1. Jalur Perdagangan Maritim (Abad VII-VIII M)</h3>
+            <div class="card">
+                <h4>Pedagang Arab di Pesisir Malabar</h4>
+                <p>Islam pertama kali masuk melalui <span class="highlight">pedagang Arab</span> yang berlayar ke pesisir Malabar (Kerala) dan Gujarat di India Barat. Para pedagang ini tidak hanya melakukan aktivitas komersial, tetapi juga menyebarkan ajaran Islam secara damai melalui interaksi sosial dan pernikahan dengan penduduk lokal.</p>
+                <ul>
+                    <li><strong>Rute Maritim:</strong> Jalur Laut Arab – Teluk Persia – Laut Arab – Pantai Barat India</li>
+                    <li><strong>Periode:</strong> Sejak masa Nabi Muhammad SAW (sekitar 629 M)</li>
+                    <li><strong>Karakteristik:</strong> Penyebaran damai, integrasi melalui pernikahan, pembangunan masjid-masjid awal</li>
+                    <li><strong>Komoditas:</strong> Rempah-rempah, tekstil, dan barang-barang mewah</li>
+                </ul>
+            </div>
+
+            <h3>2. Jalur Penaklukan Militer (Abad VIII-XIII M)</h3>
+            <div class="card">
+                <h4>Ekspansi dari Asia Tengah dan Persia</h4>
+                <p>Pasukan Muslim dari Asia Tengah dan Persia melakukan ekspansi militer ke wilayah Sindh (sekarang Pakistan) dan India Utara, membuka era baru dominasi politik Islam.</p>
+                <ul>
+                    <li><strong>Muhammad bin Qasim (711 M):</strong> Menaklukkan Sindh di bawah Kekhalifahan Umayyah pada usia 17 tahun</li>
+                    <li><strong>Mahmud dari Ghazni (998-1030 M):</strong> Melakukan 17 ekspedisi ke India Utara, memperkuat pengaruh Islam</li>
+                    <li><strong>Muhammad Ghori (1175-1206 M):</strong> Mengalahkan dinasti-dinasti Hindu dan mendirikan Kesultanan Delhi</li>
+                    <li><strong>Dampak:</strong> Pembentukan struktur pemerintahan Islam yang permanen</li>
+                </ul>
+            </div>
+
+            <h3>3. Jalur Sufisme dan Tasawuf (Abad XI-XV M)</h3>
+            <div class="card">
+                <h4>Penyebaran Spiritual oleh Para Sufi</h4>
+                <p>Para sufi (mistikus Islam) memainkan peran krusial dalam Islamisasi dengan pendekatan <span class="highlight">toleran dan akomodatif</span> terhadap budaya lokal, menciptakan jembatan spiritual antara Islam dan tradisi India.</p>
+                <ul>
+                    <li><strong>Metode:</strong> Pengajaran spiritual, karamah (keajaiban), penghormatan terhadap budaya lokal</li>
+                    <li><strong>Tarekat Utama:</strong> Chishtiyah, Suhrawardiyah, Qadiriyah, Naqshabandiyah</li>
+                    <li><strong>Dampak:</strong> Konversi massal tanpa paksaan, terutama dari kalangan kasta rendah yang tertarik pada egalitarianisme Islam</li>
+                    <li><strong>Warisan:</strong> Tradisi Qawwali dan musik devosional</li>
+                </ul>
+            </div>
+
+            <h3>4. Jalur Kekuasaan Politik (Abad XIII-XIX M)</h3>
+            <div class="card">
+                <h4>Pembentukan Dinasti-dinasti Islam</h4>
+                <p>Pembentukan kerajaan-kerajaan Islam yang stabil mempercepat proses Islamisasi melalui sistem administrasi, penerapan hukum Islam, dan pengembangan kebudayaan Islam-India.</p>
+                <ul>
+                    <li><strong>Kesultanan Delhi (1206-1526):</strong> Pertama kali menjadikan Islam sebagai fondasi pemerintahan di India</li>
+                    <li><strong>Kekaisaran Mughal (1526-1857):</strong> Mencapai puncak peradaban Islam di India dengan toleransi dan kemakmuran</li>
+                    <li><strong>Kesultanan Regional:</strong> Bengal, Gujarat, Kashmir, Deccan yang memperkuat Islam di berbagai wilayah</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="timeline" class="content-section">
+            <h2>Timeline Perkembangan Islam</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">629 M</div>
+                    <strong>Kontak Pertama dengan Islam</strong>
+                    <p>Pedagang Arab Muslim pertama kali tiba di Malabar Coast (Kerala) pada masa Nabi Muhammad SAW masih hidup. Raja Cheraman Perumal dilaporkan masuk Islam dan membangun masjid pertama di India.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">711-713 M</div>
+                    <strong>Penaklukan Sindh</strong>
+                    <p>Muhammad bin Qasim memimpin pasukan Umayyah menaklukkan Sindh (Pakistan). Ini adalah <span class="highlight">penaklukan Muslim pertama</span> yang sukses di anak benua India, membuka jalan bagi ekspansi selanjutnya.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">998-1030 M</div>
+                    <strong>Era Mahmud dari Ghazni</strong>
+                    <p>Mahmud dari Ghazni melakukan 17 ekspedisi ke India Utara, menghancurkan kuil-kuil Hindu, dan membawa kekayaan besar ke Afghanistan. Periode ini menandai ekspansi militer Islam yang intensif dan kontroversial.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1192 M</div>
+                    <strong>Pertempuran Tarain Kedua</strong>
+                    <p>Muhammad Ghori mengalahkan Prithviraj Chauhan dalam pertempuran yang menentukan, membuka jalan bagi dominasi Muslim yang permanen di India Utara.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1206 M</div>
+                    <strong>Berdirinya Kesultanan Delhi</strong>
+                    <p>Qutb-ud-din Aibak mendirikan Kesultanan Delhi, <span class="highlight">kerajaan Islam pertama yang permanen</span> di India. Kesultanan ini bertahan selama 320 tahun hingga 1526 M.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1235 M</div>
+                    <strong>Kedatangan Khwaja Moinuddin Chishti</strong>
+                    <p>Pendiri tarekat Chishtiyah di India tiba di Ajmer. Beliau memainkan peran besar dalam Islamisasi damai melalui sufisme, dengan penekanan pada cinta kasih universal dan pelayanan kemanusiaan.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1290-1320 M</div>
+                    <strong>Dinasti Khalji</strong>
+                    <p>Alauddin Khalji memperluas wilayah Kesultanan Delhi hingga India Selatan dan berhasil memukul mundur invasi Mongol yang mengancam. Era reformasi administratif dan militer.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1398 M</div>
+                    <strong>Invasi Timur Lenk</strong>
+                    <p>Timur Lenk (Tamerlane) dari Asia Tengah menyerang dan menghancurkan Delhi, melemahkan Kesultanan Delhi secara signifikan dan menciptakan periode ketidakstabilan.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1526 M</div>
+                    <strong>Berdirinya Kekaisaran Mughal</strong>
+                    <p>Babur mengalahkan Ibrahim Lodi dalam Pertempuran Panipat Pertama, mendirikan <span class="highlight">Kekaisaran Mughal</span> yang akan menjadi salah satu kerajaan terbesar dan terkaya di dunia.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1556-1605 M</div>
+                    <strong>Masa Akbar Yang Agung</strong>
+                    <p>Akbar memerintah dengan kebijakan toleransi beragama (Sulh-i-Kul), memperluas wilayah hingga hampir seluruh India Utara, dan mendorong perkembangan seni, ilmu pengetahuan, dan arsitektur. Era keemasan peradaban Mughal.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1628-1658 M</div>
+                    <strong>Masa Shah Jahan</strong>
+                    <p>Membangun <span class="highlight">Taj Mahal</span> (1632-1653), simbol cinta abadi dan puncak arsitektur Mughal. Periode ini dikenal sebagai zaman keemasan seni dan arsitektur Islam di India.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1658-1707 M</div>
+                    <strong>Masa Aurangzeb</strong>
+                    <p>Memperluas wilayah Mughal hingga mencakup hampir seluruh anak benua. Namun, kebijakan religiusnya yang ortodoks menimbulkan konflik dan menjadi awal kemunduran kekaisaran.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1757 M</div>
+                    <strong>Pertempuran Plassey</strong>
+                    <p>East India Company Inggris mengalahkan Nawab Bengal, menandai awal kolonialisme Eropa dan kemunduran bertahap kekuasaan Muslim di Asia Selatan.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1857 M</div>
+                    <strong>Pemberontakan 1857</strong>
+                    <p>Pemberontakan besar terhadap Inggris yang melibatkan pasukan Muslim dan Hindu. Kegagalan pemberontakan ini mengakhiri Kekaisaran Mughal secara resmi dan memulai era kolonial penuh.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1947 M</div>
+                    <strong>Kemerdekaan dan Pembagian</strong>
+                    <p>India dan Pakistan merdeka dari penjajahan Inggris. <span class="highlight">Pembagian berdasarkan agama</span> menciptakan Pakistan sebagai negara Muslim dan India sebagai negara sekuler, dengan tragedi kemanusiaan yang besar.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="year">1971 M</div>
+                    <strong>Kemerdekaan Bangladesh</strong>
+                    <p>Pakistan Timur memisahkan diri dari Pakistan Barat setelah perang pembebasan, menjadi Bangladesh—negara Muslim terbesar ketiga di dunia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tokoh" class="content-section">
+            <h2>Tokoh-tokoh Penting</h2>
+
+            <div class="card">
+                <h4>Muhammad bin Qasim (695-715 M)</h4>
+                <p><strong>Peran:</strong> Jenderal muda Umayyah yang menaklukkan Sindh pada usia 17 tahun</p>
+                <p><strong>Kontribusi:</strong> Membuka pintu bagi masuknya Islam ke Asia Selatan melalui penaklukan pertama yang sukses. Dikenal karena kebijakan toleran terhadap agama lain, khususnya Hindu dan Buddha, serta sistem pemerintahan yang adil.</p>
+            </div>
+
+            <div class="card">
+                <h4>Mahmud dari Ghazni (971-1030 M)</h4>
+                <p><strong>Peran:</strong> Sultan Ghazni yang melakukan 17 ekspedisi ke India Utara</p>
+                <p><strong>Kontribusi:</strong> Memperluas pengaruh Islam ke India Utara, mendirikan perpustakaan besar di Ghazni, dan menjadi patron sains dan sastra. Didampingi oleh sarjana besar Al-Biruni yang menulis "Kitab al-Hind".</p>
+            </div>
+
+            <div class="card">
+                <h4>Khwaja Moinuddin Chishti (1141-1236 M)</h4>
+                <p><strong>Peran:</strong> Pendiri tarekat Chishtiyah di India, santo sufi agung</p>
+                <p><strong>Kontribusi:</strong> Menyebarkan Islam melalui sufisme dengan pendekatan damai dan penuh kasih. Makamnya di Ajmer menjadi pusat ziarah hingga kini, dikunjungi oleh Muslim dan non-Muslim. Mendorong toleransi antar agama dan pelayanan kepada sesama tanpa memandang latar belakang.</p>
+            </div>
+
+            <div class="card">
+                <h4>Qutb-ud-din Aibak (1150-1210 M)</h4>
+                <p><strong>Peran:</strong> Pendiri Kesultanan Delhi, mantan budak yang menjadi sultan</p>
+                <p><strong>Kontribusi:</strong> Mendirikan pemerintahan Muslim pertama yang stabil di India. Memulai pembangunan Qutb Minar, menara tertinggi di India pada masanya. Dikenal sebagai penguasa yang dermawan, mendapat julukan "Lakh Baksh" (pemberi seratus ribu).</p>
+            </div>
+
+            <div class="card">
+                <h4>Alauddin Khalji (1266-1316 M)</h4>
+                <p><strong>Peran:</strong> Sultan Khalji yang kuat dan reformis</p>
+                <p><strong>Kontribusi:</strong> Memperluas Kesultanan Delhi hingga Deccan di selatan, memukul mundang serangan-serangan Mongol yang mengancam, dan melakukan reformasi administratif serta ekonomi yang revolusioner, termasuk kontrol harga pasar.</p>
+            </div>
+
+            <div class="card">
+                <h4>Babur (1483-1530 M)</h4>
+                <p><strong>Peran:</strong> Pendiri Kekaisaran Mughal, penakluk dan penyair</p>
+                <p><strong>Kontribusi:</strong> Keturunan Timur Lenk dan Genghis Khan, mengalahkan Ibrahim Lodi di Panipat (1526) dan mendirikan dinasti yang akan bertahan 300 tahun. Penyair dan penulis, meninggalkan memoir "Baburnama" yang menjadi sumber sejarah penting. Memperkenalkan taman bergaya Persia (Charbagh) dan teknologi militer modern ke India.</p>
+            </div>
+
+            <div class="card">
+                <h4>Akbar Yang Agung (1542-1605 M)</h4>
+                <p><strong>Peran:</strong> Kaisar Mughal terbesar dan paling toleran</p>
+                <p><strong>Kontribusi:</strong> Memperluas wilayah Mughal, menciptakan sistem administrasi yang efisien (Mansabdari), menerapkan kebijakan toleransi beragama radikal (Sulh-i-Kul/Perdamaian Universal), menghapus jizyah (pajak untuk non-Muslim), menikahi putri-putri Hindu untuk harmoni, dan menjadi patron besar seni, arsitektur, dan kesusastraan.</p>
+            </div>
+
+            <div class="card">
+                <h4>Shah Jahan (1592-1666 M)</h4>
+                <p><strong>Peran:</strong> Kaisar Mughal, pembangun monumen terbesar</p>
+                <p><strong>Kontribusi:</strong> Masa keemasan arsitektur Mughal. Membangun Taj Mahal untuk istrinya Mumtaz Mahal, Jama Masjid di Delhi, dan Benteng Merah. Era ini dikenal sebagai "Zaman Keemasan" arsitektur Islam dengan penggunaan marmer putih dan inlay batu mulia (pietra dura).</p>
+            </div>
+
+            <div class="card">
+                <h4>Aurangzeb (1618-1707 M)</h4>
+                <p><strong>Peran:</strong> Kaisar Mughal dengan wilayah terluas</p>
+                <p><strong>Kontribusi:</strong> Memperluas Mughal hingga mencakup hampir seluruh India. Mengkompilasi hukum Islam dalam Fatawa-e-Alamgiri. Namun, kebijakan keagamaannya yang ketat (mengembalikan jizyah, menghancurkan beberapa kuil) menimbulkan konflik dan menjadi awal kemunduran Mughal.</p>
+            </div>
+
+            <div class="card">
+                <h4>Amir Khusrau (1253-1325 M)</h4>
+                <p><strong>Peran:</strong> Penyair, musisi, dan sarjana besar India</p>
+                <p><strong>Kontribusi:</strong> Dijuluki "Nightingale of India", menulis dalam bahasa Persia dan Hindavi, menciptakan musik Qawwali, dan konon menemukan instrumen sitar dan tabla. Karyanya memadukan tradisi Islam dan India, menjadi jembatan budaya.</p>
+            </div>
+
+            <div class="card">
+                <h4>Shah Waliullah Dehlawi (1703-1762 M)</h4>
+                <p><strong>Peran:</strong> Pemikir reformis dan teolog</p>
+                <p><strong>Kontribusi:</strong> Menerjemahkan Quran ke bahasa Persia untuk pertama kalinya di India, menekankan ijtihad (pemikiran independen), dan pemurnian praktik Islam dari bid'ah. Pemikirannya mempengaruhi gerakan reformasi Islam di Asia Selatan.</p>
+            </div>
+
+            <div class="card">
+                <h4>Muhammad Iqbal (1877-1938 M)</h4>
+                <p><strong>Peran:</strong> Penyair-filsuf dan "Bapak Spiritual Pakistan"</p>
+                <p><strong>Kontribusi:</strong> Mengilhami gerakan kemerdekaan Muslim melalui puisi dan filsafatnya yang menggabungkan pemikiran Islam dengan modernitas. Karyanya "Shikwa" dan "Jawab-e-Shikwa" menjadi klasik sastra Urdu. Penyair nasional Pakistan.</p>
+            </div>
+
+            <div class="card">
+                <h4>Muhammad Ali Jinnah (1876-1948 M)</h4>
+                <p><strong>Peran:</strong> Pendiri Pakistan, "Quaid-e-Azam" (Pemimpin Agung)</p>
+                <p><strong>Kontribusi:</strong> Memimpin Liga Muslim dalam memperjuangkan negara terpisah untuk Muslim India. Menjadi Gubernur Jenderal Pakistan pertama. Visinya tentang Pakistan sebagai negara demokratis dan moderat masih menjadi perdebatan hingga kini.</p>
+            </div>
+        </div>
+
+        <div id="peninggalan" class="content-section">
+            <h2>Peninggalan Peradaban Islam</h2>
+
+            <h3>Arsitektur dan Monumen</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>Taj Mahal</h4>
+                    <p>Dibangun 1632-1653 di Agra oleh Shah Jahan. Makam Mumtaz Mahal yang menjadi salah satu dari Tujuh Keajaiban Dunia Modern. Simbol cinta abadi dan puncak arsitektur Mughal yang memadukan gaya Persia, Turki, Ottoman, dan India dengan sempurna.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Qutb Minar</h4>
+                    <p>Menara setinggi 73 meter di Delhi, dibangun 1192-1368. Monumen kemenangan Islam pertama di India dengan kaligrafi Quran yang indah. Kompleks ini termasuk Quwwat-ul-Islam Masjid, masjid pertama di Delhi.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Jama Masjid Delhi</h4>
+                    <p>Dibangun 1650-1656 oleh Shah Jahan. Masjid terbesar di India yang dapat menampung 25.000 jamaah. Memiliki tiga kubah marmer, dua menara 40 meter, dan halaman luas yang megah.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Benteng Merah Delhi</h4>
+                    <p>Istana Kaisar Mughal 1639-1648. Mengandung Diwan-i-Am (aula umum) dan Diwan-i-Khas (aula khusus) dengan Peacock Throne yang legendaris. Tempat upacara kemerdekaan India setiap 15 Agustus.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Badshahi Mosque</h4>
+                    <p>Masjid megah di Lahore, Pakistan, dibangun 1671-1673 oleh Aurangzeb. Contoh spektakuler arsitektur Mughal akhir dengan kapasitas 100.000 jamaah. Kedua terbesar di Pakistan.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Humayun's Tomb</h4>
+                    <p>Makam Kaisar Humayun di Delhi, 1565-1572. Inspirasi langsung bagi Taj Mahal. Taman Persia (Charbagh) dengan arsitektur simetris yang sempurna, diakui UNESCO sebagai Warisan Dunia.</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Ilmu Pengetahuan dan Intelektual</h3>
+            
+            <div class="card">
+                <h4>Kontribusi dalam Sains</h4>
+                <ul>
+                    <li><strong>Al-Biruni (973-1048):</strong> Sarjana Persia yang menulis "Kitab al-Hind", studi komprehensif pertama tentang India mencakup astronomi, matematika, geografi, filsafat, dan antropologi budaya</li>
+                    <li><strong>Astronomi:</strong> Observatorium Jantar Mantar di Delhi dan Jaipur, pengembangan kalender lunar yang sangat akurat untuk menentukan waktu shalat dan puasa</li>
+                    <li><strong>Matematika:</strong> Perkembangan aljabar dan geometri, sistem administrasi yang menggunakan perhitungan matematis kompleks untuk pajak dan pengukuran tanah</li>
+                    <li><strong>Kedokteran:</strong> Rumah sakit (Dar al-Shifa), pengembangan obat-obatan herbal dengan menggabungkan pengetahuan Unani dan Ayurveda, terjemahan teks medis Arab dan Persia</li>
+                    <li><strong>Pertanian:</strong> Sistem irigasi canggih (qanat, karez), pengenalan tanaman baru dari Persia dan Arab seperti varietas unggul mangga, jeruk, kapas, dan tebu</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Literatur dan Sastra</h4>
+                <ul>
+                    <li><strong>Bahasa Urdu:</strong> Berkembang sebagai hasil perpaduan organik bahasa Persia, Arab, Turki, dan Hindi. Menjadi bahasa sastra yang sangat kaya dengan tradisi ghazal dan nazm</li>
+                    <li><strong>Baburnama:</strong> Memoar Babur yang ditulis dalam bahasa Turki Chagatai, salah satu autobiografi terbaik dalam sastra dunia dengan pengamatan tajam tentang alam, budaya, dan politik</li>
+                    <li><strong>Akbarnama:</strong> Kronik masa pemerintahan Akbar yang ditulis oleh Abu'l-Fazl, dokumen sejarah penting dengan ilustrasi miniatur yang indah</li>
+                    <li><strong>Puisi Sufi:</strong> Karya-karya dari Bulleh Shah, Shah Abdul Latif Bhittai, Rahman Baba, dan Sachal Sarmast yang memadukan Islam dengan mistisisme lokal dalam bahasa daerah</li>
+                    <li><strong>Perpustakaan Imperial:</strong> Perpustakaan besar di istana-istana Mughal yang menyimpan puluhan ribu manuskrip langka dalam berbagai bahasa</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Pendidikan dan Filsafat</h4>
+                <ul>
+                    <li><strong>Sistem Madrasah:</strong> Lembaga pendidikan Islam yang mengajarkan Al-Quran, Hadits, Fiqh, Bahasa Arab, Mantiq (Logika), Filsafat, dan sains</li>
+                    <li><strong>Darul Uloom Deoband (1866):</strong> Sekolah Islam terkenal yang hingga kini menjadi pusat pembelajaran Islam tradisional dengan pengaruh global</li>
+                    <li><strong>Aligarh Muslim University (1875):</strong> Didirikan oleh Sir Syed Ahmad Khan untuk memadukan pendidikan Islam tradisional dengan ilmu pengetahuan modern Barat</li>
+                    <li><strong>Filsafat Islam:</strong> Pengembangan pemikiran teologi (Kalam), sufisme praktis, dan sintesis antara rasionalisme Islam dengan spiritualitas India</li>
+                </ul>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Seni dan Kebudayaan</h3>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>Seni Miniatur Mughal</h4>
+                    <p>Lukisan miniatur yang menggambarkan kehidupan istana, pertempuran, perburuan, dan kisah-kisah dari Mahabharata hingga riwayat nabi. Memadukan gaya Persia dengan realisme dan naturalisme India. Karya-karya di bawah patronase Akbar dan Jahangir mencapai puncak keindahan.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Musik Klasik Hindustani</h4>
+                    <p>Musik Hindustani berkembang pesat di bawah patronase Mughal. Amir Khusrau dikreditkan menciptakan instrumen sitar dan tabla. Qawwali sebagai musik devosional Sufi yang menghipnotis. Sistem raga dan tala disempurnakan di istana-istana.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Kaligrafi Islam</h4>
+                    <p>Seni kaligrafi Arab dan Persia berkembang menjadi bentuk seni tinggi. Terlihat pada dinding masjid, makam, gerbang istana, dan manuskrip Al-Quran. Gaya Naskh, Nastaliq, dan Thuluth menjadi sangat populer dengan keindahan yang memukau.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Tekstil dan Kain</h4>
+                    <p>Industri tekstil berkembang dengan motif-motif Islam dan teknik tenun canggih. Kashmiri shawls (pashmina), kain brokat (brocade), dan karpet Persia menjadi terkenal di seluruh dunia. Ekspor tekstil India ke Eropa sangat diminati dan menjadi sumber kemakmuran.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Kuliner Mughlai</h4>
+                    <p>Masakan Mughal yang kaya rempah dan kompleks: biryani, korma, kebab, nihari, haleem, naan, kulfi, dan jalebi. Perpaduan sempurna cita rasa Persia, Turki, dan India yang hingga kini menjadi kebanggaan kuliner Asia Selatan.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Kerajinan Tangan</h4>
+                    <p>Teknik pietra dura (inlay batu mulia), perhiasan Mughal dengan desain rumit, kerajinan logam (bidri ware), ukiran kayu dan gading yang sangat detail. Taj Mahal menampilkan pietra dura terbaik dengan 28 jenis batu semi-mulia.</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Sistem Pemerintahan dan Hukum</h3>
+
+            <div class="card">
+                <h4>Administrasi Mughal</h4>
+                <ul>
+                    <li><strong>Mansabdari System:</strong> Sistem pangkat militer dan sipil yang inovatif berdasarkan jumlah pasukan (zat) dan kavaleri (sawar). Setiap mansabdar menerima gaji tunai, bukan tanah feodal</li>
+                    <li><strong>Zabt System:</strong> Sistem pajak tanah revolusioner yang dikembangkan Akbar berdasarkan survei tanah menyeluruh, klasifikasi kesuburan tanah, dan produktivitas rata-rata 10 tahun</li>
+                    <li><strong>Diwan-i-Kul:</strong> Kementerian keuangan pusat yang mengatur pendapatan negara dengan sistem akuntansi ganda (siyaq)</li>
+                    <li><strong>Subahdar dan Faujdar:</strong> Gubernur provinsi (suba) dan komandan militer distrik yang mengatur wilayah dengan efisien</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Hukum Islam (Shariah)</h4>
+                <ul>
+                    <li><strong>Fatawa-e-Alamgiri:</strong> Kompilasi monumental hukum Islam Hanafi yang disusun oleh 500 ulama di bawah Aurangzeb, menjadi referensi hukum penting selama berabad-abad</li>
+                    <li><strong>Qazi Courts:</strong> Pengadilan Islam independen yang mengatur masalah perdata dan pidana untuk umat Muslim dengan sistem peradilan berjenjang</li>
+                    <li><strong>Sistem Waqf:</strong> Yayasan keagamaan untuk pendanaan masjid, madrasah, rumah sakit, penginapan musafir, dan berbagai fasilitas sosial lainnya</li>
+                    <li><strong>Hisbah:</strong> Lembaga pengawasan moral dan pasar untuk memastikan keadilan dalam perdagangan</li>
+                </ul>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Warisan Sosial dan Budaya</h3>
+
+            <div class="card">
+                <h4>Sintesis Indo-Islamic (Ganga-Jamuni Tehzeeb)</h4>
+                <p>Salah satu warisan terpenting adalah <span class="highlight">perpaduan organik budaya Hindu-Muslim</span> yang menciptakan peradaban unik:</p>
+                <ul>
+                    <li><strong>Bahasa:</strong> Urdu sebagai lingua franca yang memadukan kosakata Arab-Persia dengan tata bahasa dan fonologi Hindi-Prakrit</li>
+                    <li><strong>Arsitektur:</strong> Gaya Indo-Islamic yang memadukan kubah dan lengkungan Islam dengan pilar, jharokha (balkon), dan ornamen Hindu-Rajput</li>
+                    <li><strong>Musik:</strong> Ragas India dengan pengaruh maqam Persia, menciptakan tradisi musik klasik Hindustani yang kaya</li>
+                    <li><strong>Seni Visual:</strong> Miniatur Mughal yang menggabungkan teknik Persia dengan tema dan naturalisme India</li>
+                    <li><strong>Filosofi:</strong> Dialog antara pemikiran Bhakti dan Sufi yang saling mempengaruhi, menekankan toleransi, cinta universal, dan pencarian spiritual</li>
+                    <li><strong>Festival:</strong> Perayaan bersama dan saling menghormati dalam Eid, Holi, Diwali, dan Basant di berbagai wilayah</li>
+                    <li><strong>Bahasa Daerah:</strong> Perkembangan sastra Islam dalam Bengali, Punjabi, Sindhi, Gujarati, dan Deccani</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Tokoh-tokoh Sinkretisme</h4>
+                <ul>
+                    <li><strong>Kabir (1440-1518):</strong> Penyair-santo revolusioner yang mengajarkan persatuan esensial Hindu-Muslim, mengkritik ritual formal dan kasta, dihormati oleh kedua komunitas</li>
+                    <li><strong>Guru Nanak (1469-1539):</strong> Pendiri Sikhisme yang mengambil elemen monotheisme Islam dan bhakti Hindu, menciptakan agama baru yang menekankan kesetaraan</li>
+                    <li><strong>Dara Shikoh (1615-1659):</strong> Putra mahkota Shah Jahan yang menerjemahkan Upanishad ke Persia dan menulis "Majma-ul-Bahrain" (Pertemuan Dua Lautan) tentang kesamaan sufisme dan Vedanta</li>
+                    <li><strong>Tulsidas dan Rahim:</strong> Penyair Hindu dan Muslim yang saling menghormati dan berbagi nilai spiritual universal</li>
+                </ul>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h3>Peninggalan Modern</h3>
+
+            <div class="card">
+                <h4>Dampak pada Negara-negara Modern</h4>
+                <ul>
+                    <li><strong>Pakistan (1947):</strong> Negara yang didirikan berdasarkan teori dua bangsa, dengan populasi lebih dari 230 juta Muslim, menjadi negara Muslim terbesar kedua di dunia</li>
+                    <li><strong>Bangladesh (1971):</strong> Negara Muslim terbesar ketiga di dunia dengan 165 juta penduduk, mempertahankan identitas Islam dengan budaya Bengali</li>
+                    <li><strong>India:</strong> Memiliki populasi Muslim terbesar ketiga dunia (lebih dari 200 juta), dengan kontribusi besar dalam politik, seni, sinema, olahraga, dan ekonomi nasional</li>
+                    <li><strong>Afghanistan:</strong> Negara mayoritas Muslim dengan sejarah Islam yang panjang sejak abad ke-7</li>
+                    <li><strong>Institusi Pendidikan:</strong> Ribuan madrasah, universitas Islam, dan lembaga penelitian yang masih beroperasi</li>
+                    <li><strong>Sistem Hukum:</strong> Muslim Personal Law di India yang mengatur pernikahan, warisan, dan masalah keluarga bagi Muslim</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Situs Warisan Dunia UNESCO</h4>
+                <p>Monumen Islam Asia Selatan yang diakui sebagai Warisan Dunia:</p>
+                <ul>
+                    <li>Taj Mahal, Agra (India) — 1983</li>
+                    <li>Qutb Minar and its Monuments, Delhi (India) — 1993</li>
+                    <li>Humayun's Tomb, Delhi (India) — 1993</li>
+                    <li>Red Fort Complex, Delhi (India) — 2007</li>
+                    <li>Fatehpur Sikri (India) — 1986</li>
+                    <li>Agra Fort (India) — 1983</li>
+                    <li>Rohtas Fort (Pakistan) — 1997</li>
+                    <li>Shalimar Gardens, Lahore (Pakistan) — 1981</li>
+                    <li>Historic City of Ahmadabad (India) — 2017</li>
+                    <li>Makli Necropolis, Thatta (Pakistan) — 1981</li>
+                    <li>Fort and Shalimar Gardens, Lahore (Pakistan) — 1981</li>
+                </ul>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="card" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; border: none; padding: 40px;">
+                <h3 style="color: #c9a961; margin-top: 0;">Kesimpulan</h3>
+                <p style="font-size: 1.1em; line-height: 1.9; text-align: justify;">
+                    Peninggalan Islam di Asia Selatan merupakan warisan peradaban yang sangat kaya dan beragam, mencakup arsitektur monumental yang megah, sistem pemerintahan yang maju dan efisien, perkembangan ilmu pengetahuan yang signifikan, sastra yang luar biasa indah, dan yang paling penting—integrasi budaya yang unik antara tradisi Islam dengan peradaban India kuno.
+                </p>
+                <p style="font-size: 1.1em; line-height: 1.9; text-align: justify; margin-top: 20px;">
+                    Warisan ini tidak hanya berpengaruh pada masa lalu, tetapi terus membentuk identitas, budaya, dan kehidupan sosial-politik masyarakat Asia Selatan hingga hari ini. Lebih dari 600 juta Muslim di kawasan ini adalah bukti nyata dari perjalanan panjang dan kompleks Islam di Asia Selatan, yang dimulai lebih dari 1.300 tahun yang lalu dan terus berkembang dalam konteks modern dengan tantangan dan peluang baru.
+                </p>
+                <p style="font-size: 1.1em; line-height: 1.9; text-align: justify; margin-top: 20px;">
+                    Sintesis Indo-Islamic atau "Ganga-Jamuni Tehzeeb" tetap menjadi model penting tentang bagaimana berbagai peradaban dapat berinteraksi, saling mempengaruhi, dan menciptakan sesuatu yang baru tanpa kehilangan identitas masing-masing—sebuah pelajaran berharga untuk dunia yang semakin terhubung namun juga terpolarisasi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-size: 1.1em; font-weight: 500;">Tugas Pendidikan Agama Islam Kelas 12</p>
+        <p style="margin: 10px 0; opacity: 0.9;">Sejarah Perkembangan Islam di Asia Selatan</p>
+        <p style="margin-top: 15px; opacity: 0.7; font-size: 0.9em;">© 2025 — Dibuat untuk keperluan pendidikan</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const buttons = document.querySelectorAll('nav button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                });
+            }, observerOptions);
+
+            timelineItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-20px)';
+                item.style.transition = 'all 0.8s ease-out';
+                observer.observe(item);
+            });
+
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease-out';
+                card.style.transitionDelay = (index * 0.1) + 's';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
